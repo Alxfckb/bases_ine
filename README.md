@@ -6,7 +6,7 @@ En este repositorio se encuentra el cuaderno de Jupyter Notebook utilizado para 
    ## FUENTES IPC - PERIODICIDAD.xlsx
    ### Campos requeridos
        
-         *  ID _INE
+         *  ID_INE
          *  Periodicidad
    ## FUENTES IPC - GEO.xlsx 
    ### Campos requeridos
