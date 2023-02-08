@@ -4,26 +4,26 @@ En este repositorio se encuentra el cuaderno de Jupyter Notebook utilizado para 
 
 # Archivos de Entrada:
    ## FUENTES IPC - PERIODICIDAD.xlsx
-      * ID _INE
-      * Periodicidad
+      *  ID _INE
+      *  Periodicidad
    ## FUENTES IPC - GEO.xlsx 
-      *ID_INE    
+      *  ID_INE    
    ## FUENTES IPC - ASIGNADAS.xlsx 
-      * RegCod
-      * DepCod
-      * MunCod
-      * FntCod
-      * NOMBRE_FUENTE
-      * DIRECCION  
+      *  RegCod
+      *  DepCod
+      *  MunCod
+      *  FntCod
+      *  NOMBRE_FUENTE
+      *  DIRECCION  
 # Archivos de Salida:
    ## fuentes_faltan.xlsx 
-      * ID_INE
-      * RegCod
-      * DepCod 
-      * MunCod
-      * FntCod
-      * NOMBRE_FUENTE
-      * DIRECCION
-      * CANTIDAD_ARTICULOS
-      * Periodicidad
+      *  ID_INE
+      *  RegCod
+      *  DepCod 
+      *  MunCod
+      *  FntCod
+      *  NOMBRE_FUENTE
+      *  DIRECCION
+      *  CANTIDAD_ARTICULOS
+      *  Periodicidad
   
