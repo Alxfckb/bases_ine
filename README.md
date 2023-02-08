@@ -1,7 +1,7 @@
 # Limpieza de bases de datos
 
 En este repositorio se encuentra el cuaderno de Jupyter Notebook utilizado para filtrar la base de datos
-
+   
 # Archivos de Entrada:
    ## FUENTES IPC - PERIODICIDAD.xlsx
    ### Campos requeridos
@@ -31,4 +31,5 @@ En este repositorio se encuentra el cuaderno de Jupyter Notebook utilizado para 
    *  DIRECCION
    *  CANTIDAD_ARTICULOS
    *  Periodicidad
+  
   
