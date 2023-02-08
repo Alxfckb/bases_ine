@@ -31,5 +31,5 @@ En este repositorio se encuentra el cuaderno de Jupyter Notebook utilizado para 
    *  DIRECCION
    *  CANTIDAD_ARTICULOS
    *  Periodicidad
-  
+ 
   
