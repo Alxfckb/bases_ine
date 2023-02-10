@@ -59,7 +59,7 @@ dataframe.rename(columns = {'Fecha de Recopilación':'Fecha',
 # CHECKPOINT MIGHT DELETE
 print(dataframe.Boleta)
 dataframe.Fecha = dataframe['Fecha'].str.split().str[0]
-pd.to_datetime(dataframe['Fecha'])
+dataframe.Fecha = pd.to_datetime(dataframe['Fecha'])
 dataframe.Cotizador = dataframe['Cotizador'].str.split('- ').str[1]
 
 print(dataframe.Fecha)
