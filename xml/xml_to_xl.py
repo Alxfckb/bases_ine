@@ -42,8 +42,9 @@ for dir in dirs:
         if not filename.endswith('.xml'): continue
         fullname = join(path, filename)
         print(fullname)
-        temp = pdx.read_xml(fullname,cols,root_is_rows=False)
-    #temp = pd.read_xml(fullname)
+        #temp = pdx.read_xml(fullname,cols,root_is_rows=False)
+    temp = pd.read_xml(fullname)
+    temp = flatten(temp)
 dataframe = pd.concat([temp,dataframe],join='inner')
 #dataframe = pd.merge(temp,dataframe, how='left')  
 #cols = list(temp.columns.values)
