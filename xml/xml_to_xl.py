@@ -6,9 +6,7 @@ from os.path import isfile, isdir, join
 import pandas_read_xml as pdx
 #R1_49_CECILIOBORRAYO/FUENTES_FEB_RECUPERADAS_49
 '''
-
 OBTENER LA ENTRADA Y SALIDA DEL USUARIO
-
 '''
 parser = argparse.ArgumentParser(description='***** XML TO EXCEL *****')
 
@@ -38,32 +36,22 @@ temp = pd.DataFrame()
 dirs = [f for f in listdir(path) if isdir(join(path, f))]
 #print(dirs)
 for dir in dirs:
-    path = args.user+'/' + dir
-    #path = args.user+'\\' + dir
+    #path = args.user+'/' + dir
+    path = args.user+'\\' + dir
     for filename in listdir(path):
         if not filename.endswith('.xml'): continue
         fullname = join(path, filename)
-<<<<<<< HEAD
-        print(fullname)
-        #temp = pdx.read_xml(fullname,cols,root_is_rows=False)
-    temp = pd.read_xml(fullname)
-    temp = flatten(temp)
-dataframe = pd.concat([temp,dataframe],join='inner')
-=======
         #print(fullname)
         temp = pd.read_xml(fullname, names=cols)
         flat=temp.stack(dropna=True).values
-        flat = np.insert(flat,[17],temp.Correo[16])
+        flat = np.insert(flat,[17],temp.Correo[18])
         print(flat)
         dicts = pd.Series(dict(map(lambda i,j : (i,j) , cols,flat)))
     #temp = pd.read_xml(fullname)
-    dataframe = pd.concat([dataframe,dicts.to_frame().T],ignore_index=False)
+    dataframe = pd.concat([dataframe, dicts.to_frame().T],ignore_index=False)
 #dataframe = pd.concat([temp,dataframe],join='inner')
->>>>>>> 29cfba061ec7d7d754f936658a1135185b8042c0
 #dataframe = pd.merge(temp,dataframe, how='left')  
 #cols = list(temp.columns.values)
 #print(cols)      
 print(dataframe.info())
 dataframe.to_excel(outname, columns=cols, index=False)
-
-    
